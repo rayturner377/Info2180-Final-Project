@@ -1,0 +1,31 @@
+input[type=text], input[type=password], input[type=email],select {
+  width: 500px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 1px;
+  display: inline-block;
+  background-color:#f2f2f2;
+
+}
+
+label,h1{
+  font-family: Arial, Geneva, Helvetica, sans-serif;
+  font-weight:bold;
+}
+
+h1{
+  padding-left:10px;
+}
+
+.form-group{
+  padding: 10px;
+}
+
+button{
+  height: 40px;
+  width: 150px;
+  border:none;
+  border-radius:5px;
+  color: white;
+  background-color: blue;
+}

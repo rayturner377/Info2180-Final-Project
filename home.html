@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <link rel="stylesheet" type="text/css" media="screen" href="home.css"/>
+  <!--<script src="home.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <div class="wrapper" id="documents">
+      <div class="nIssue">
+        <h1>Issues</h1>
+      </div>
+      <div class="newissue">
+        <button type="button" name="postJob" class = "nIssue" id="nIssueBtn">Create New Issue</button>
+      </div>
+    </div>
+
+    <script>
+      nIssueBtn.addEventListener("click",function(){
+          let xml = new XMLHttpRequest();
+          xml.onreadystatechange = function(){
+              if(this.readyState == 4 && this.status == 200){
+                  documents.innerHTML = this.responseText;
+              }
+          }
+          xml.open("GET","newIssue.html",true);
+          xml.send();
+      });
+
+    </script>
+
+</html>

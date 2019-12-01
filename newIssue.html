@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <link rel="stylesheet" type="text/css" media="screen" href="newIssue.css"/>
+    <div class="nIssue">
+      <h1>Create Issue</h1>
+    </div>
+
+    <div class="issue-form">
+
+      <form method="post" class="form-horizontal" action="">
+
+        <div class="form-group">
+    			<label class="control-label col-xs-4">Title</label>
+    			<div class="col-xs-8">
+            <input type="text" class="form-control" name="firstname" required="required">
+          </div>
+        </div>
+
+        <div class="form-group">
+    			<label class="control-label col-xs-4">Description</label>
+    			<div class="col-xs-8">
+            <input type="text" class="form-control" name="description" required="required" id="description">
+          </div>
+        </div>
+
+        <div class="form-group">
+    			<label class="control-label col-xs-4">Assigned To</label>
+    			<div class="col-xs-8">
+            <input type="text" class="form-control" name="assigned_to" required="required">
+          </div>
+        </div>
+
+        <div class="form-group">
+    			<label class="control-label col-xs-4">Type</label>
+    			<div class="col-xs-8">
+            <select class="form-control" name="type" required="required">
+              <option value="bug">Bug</option>
+              <option value="proposal">Proposal</option>
+              <option value="task">Task</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+    			<label class="control-label col-xs-4">Priority</label>
+    			<div class="col-xs-8">
+            <select class="form-control" name="priority" required="required">
+              <option value="minor">Minor</option>
+              <option value="major">Major</option>
+              <option value="critical">Critical</option>
+            </select>
+          </div>
+        </div>
+
+    		<div class="form-group">
+    			<div class="col-xs-8 col-xs-offset-4">
+    				<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    			</div>
+    		</div>
+
+      </form>
+
+    </div>
+</html>

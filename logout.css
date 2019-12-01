@@ -1,0 +1,20 @@
+button{
+  height: 40px;
+  width: 150px;
+  border:none;
+  border-radius:5px;
+  color: black;
+  margin:20px;
+}
+
+#yes{
+  background-color: #ff9999;
+}
+
+#no{
+  background-color: #99ff99;
+}
+
+.buttons{
+  display: flex;
+}

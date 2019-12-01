@@ -1,0 +1,27 @@
+.wrapper{
+  width: 700px;
+}
+.f1 {
+
+display: flex;
+}
+
+.nIssue{
+  float:left;
+  height:40px;
+  width:200px;
+}
+.newissue{
+  padding-top: 20px;
+  float:right;
+}
+button {
+  margin-top: 15%
+  height:40px;
+  width:200px;
+  border-radius:8px;
+  border:none;
+  color:white;
+  font-size:16px;
+  background-color:green;
+}

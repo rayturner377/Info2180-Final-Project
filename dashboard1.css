@@ -1,0 +1,46 @@
+html,body{
+    margin: 0px;
+    height:100%;
+
+}
+
+header{
+    background-color: black;
+    text-align: left;
+    justify-content:center;
+    height:10%;
+    color: white;
+}
+
+main{
+    display: flex;
+    height: 100%;
+}
+main> section:first-child{
+    background-color: rgb(245, 243, 243);
+    height: 100%;
+    width: 10%;
+}
+main >section:nth-child(2){
+    background-color: white;
+
+    width: 90%;
+}
+
+main> section:first-child ul{
+    list-style: none;
+   margin-left: 0.5rem;;
+    padding-left: 0px;
+
+}
+main> section:first-child ul li{
+    margin-bottom: 15%;
+}
+main> section:first-child li{
+    margin: 0.2rem;
+    /* margin-left: 0.1rem;
+    padding: 0px;*/
+}
+main> section:first-child img{
+    width: 20%;
+}
