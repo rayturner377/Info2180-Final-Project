@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <link rel="stylesheet" type="text/css" media="screen" href="home.css"/>
-  <!--<script src="home.js"></script>-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <div class="wrapper" id="documents">
-      <div class="nIssue">
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="home.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+      <div class="nIssue" id = "nIssue">
         <h1>Issues</h1>
       </div>
-      <div class="newissue">
-        <button type="button" name="postJob" class = "nIssue" id="nIssueBtn">Create New Issue</button>
+      <div class="newissue" id="newissue">
+        <button type="button" name="postJob" class = "but" id="btn">Create New Issue</button>
       </div>
     </div>
-
+    <!--<script src="home.js"></script>-->
     <script>
-      nIssueBtn.addEventListener("click",function(){
-          let xml = new XMLHttpRequest();
-          xml.onreadystatechange = function(){
-              if(this.readyState == 4 && this.status == 200){
-                  documents.innerHTML = this.responseText;
-              }
+    const process = () =>
+    {
+      let xml = new XMLHttpRequest();
+      xml.onreadystatechange = function(){
+          if(this.readyState == 4 && this.status == 200){
+              results.innerHTML = this.responseText;
           }
-          xml.open("GET","newIssue.html",true);
-          xml.send();
-      });
-
+      }
+      xml.open("GET","newIssue.html",true);
+      xml.send();
+      console.log(3);
+    }
+    let btn = document.getElementById('btn');
+    btn.addEventListener('click', process);
     </script>
 
+
+  </body>
 </html>

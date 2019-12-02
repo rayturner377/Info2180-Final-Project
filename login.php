@@ -5,7 +5,7 @@
 	require 'connection.php';
 
   $user = filter_input(INPUT_POST,"email", FILTER_SANITIZE_STRING);
-  $pass = filter_input(INPUT_POST,"pass", FILTER_SANITIZE_STRING);
+  $pass = md5(filter_input(INPUT_POST,"pass", FILTER_SANITIZE_STRING));
 
   $host = 'localhost';
   $username = 'root';

@@ -44,3 +44,7 @@ main> section:first-child li{
 main> section:first-child img{
     width: 20%;
 }
+
+#home1:hover, #adduser1:hover, #newJob1:hover, #logout1:hover{
+    color: blue;
+}

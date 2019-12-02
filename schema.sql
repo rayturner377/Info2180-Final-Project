@@ -38,7 +38,7 @@ CREATE TABLE `Users` (
 -- This was commented as i need to read up on hashing
 
 INSERT INTO `Users` (`id`, `firstname`, `lastname`, `password`, `email`,`date_joined` ) VALUES
-(1, 'Web', 'Dev','password123','admin@bugme.com', '2019-11-20 12:30:00');
+(1, 'Web', 'Dev','482c811da5d5b4bc6d497ffa98491e38','admin@bugme.com', '2019-11-20 12:30:00');
 
 -- --------------------------------------------------------
 

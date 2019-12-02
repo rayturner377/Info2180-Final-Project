@@ -3,10 +3,17 @@ window.onload = function(){
     let newUser = document.getElementById("adduser1");
     let newIssue =document.getElementById("newJob1");
     let logout = document.getElementById("logout1");
-    let nIssueBtn = document.getElementById("nIssueBtn");
+
+    $.ajax({
+       url: "home.html",
+       type: "get",
+       dataType: "text",
+       success: function(data){
+         $('#results').html(data);
+       }
+    });
 
     home.addEventListener("click",function(){
-      console.log("You clicked the button");
         let xml = new XMLHttpRequest();
         xml.onreadystatechange = function(){
             if(this.readyState == 4 && this.status == 200){
